@@ -1,0 +1,28 @@
+.alpbhabets {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 7px;
+}
+
+.alphabet {
+  height: 30px;
+  flex: 1 1 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-blue);
+  color: #fff;
+  border-radius: 3px;
+}
+
+.alphabet:hover {
+  cursor: pointer;
+}
+
+.active {
+  border: 1px solid var(--dark-blue);
+  background-color: #fff;
+  color: var(--dark-blue);
+}

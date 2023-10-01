@@ -1,0 +1,31 @@
+.search-input-block {
+  border: 1px solid #ccc;
+}
+
+.search-tag {
+  font-weight: 500;
+  color: var(--light-gray);
+}
+.search-icon {
+  color: #ccc;
+  font-size: 1.2rem;
+}
+.search-input {
+  border: none;
+  font-size: 1.1rem;
+  outline: none;
+  color: #333;
+}
+
+.clear-btn {
+  background-color: var(--green);
+  border: none;
+  color: #fff;
+  padding: 0 15px;
+  font-size: 1.2rem;
+}
+
+.add-btn {
+  background-color: var(--dark-blue);
+  border: none;
+}

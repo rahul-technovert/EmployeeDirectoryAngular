@@ -1,0 +1,13 @@
+<div class="categories">
+  <p class="heading">{{ heading }}</p>
+  <ul class="list category-list mb-4">
+    <li
+      *ngFor="let category of categoryCounts"
+      [class.active]="activeCategory === category.title"
+      class="category"
+      (click)="onCategoryClick(category.title)"
+    >
+      {{ category.title }} ({{ category.total }})
+    </li>
+  </ul>
+</div>

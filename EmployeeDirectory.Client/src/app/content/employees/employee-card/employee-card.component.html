@@ -1,0 +1,32 @@
+<div class="employee-card d-flex justify-content-between p-2">
+  <div class="d-flex gap-2">
+    <div class="img-box">
+      <img class="img card-img" src="../../assets/profile.jpg" alt="" />
+    </div>
+    <div>
+      <div class="details">
+        <p class="name mb-1 fw-bolder">
+          {{ card.firstName }} {{ card.lastName }}
+        </p>
+        <p class="detail mb-0 mt-0">{{ card.jobTitle }}</p>
+        <p class="detail mt-0 mb-0">{{ card.department }}</p>
+      </div>
+      <div class="icons mt-1 d-flex gap-2">
+        <i class="fa-solid fa-square-phone"></i>
+        <i class="fa-solid fa-envelope"></i>
+        <i class="fa-solid fa-comment"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-heart"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="icons d-flex flex-column justify-content-between">
+    <button (click)="emitToggleProfileEvent(card.id)" class="icon-btn">
+      <i class="fa-solid fa-eye"></i>
+    </button>
+    <button (click)="handleDelete(card.id)" class="icon-btn">
+      <i class="fa-solid fa-trash"></i>
+    </button>
+  </div>
+</div>

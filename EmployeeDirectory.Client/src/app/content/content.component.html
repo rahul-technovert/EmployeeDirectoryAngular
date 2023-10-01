@@ -1,0 +1,14 @@
+<alphabets></alphabets>
+<advanced-filters (toggleFormEvent)="onToggleForm($event)"></advanced-filters>
+<employees
+  (deleteCardEvent)="deleteCard($event)"
+  (toggleFormEvent)="onToggleForm($event)"
+  [cards]="cards"
+></employees>
+<app-form
+  *ngIf="isFormVisible"
+  (addCardEvent)="addCard($event)"
+  (editCardEvent)="editCard($event)"
+  (toggleFormEvent)="onToggleForm($event)"
+  [id]="selectedId"
+></app-form>

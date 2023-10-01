@@ -1,0 +1,26 @@
+.employee-card {
+  background-color: #ddd;
+}
+.img-box {
+  width: 60px;
+  height: 60px;
+}
+
+.detail {
+  font-size: 0.9rem;
+  color: var(--semi-dark-gray);
+}
+.card-details .name {
+  font-size: 1rem;
+  color: var(--dark-gray);
+}
+
+.icons {
+  color: var(--semi-dark-gray);
+}
+
+.icon-btn {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+}

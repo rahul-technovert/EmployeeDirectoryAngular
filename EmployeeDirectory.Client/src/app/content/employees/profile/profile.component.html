@@ -1,0 +1,44 @@
+<div class="profile-container d-flex justify-content-center align-items-center">
+  <div class="profile fs-4 d-flex flex-column align-items-center py-5">
+    <h1 class="mb-6">Employee Profile</h1>
+    <div class="details row gap-1">
+      <div class="col fw-bold text-end">First Name</div>
+      <div class="col">{{ employee.firstName }}</div>
+      <div class="w-100"></div>
+      <div class="col fw-bold text-end">Last Name</div>
+      <div class="col">{{ employee.lastName }}</div>
+      <div class="w-100"></div>
+      <div class="col fw-bold text-end">Email</div>
+      <div class="col">{{ employee.email }}</div>
+      <div class="w-100"></div>
+      <div class="col fw-bold text-end">Skype Id</div>
+      <div class="col">{{ employee.skypeId }}</div>
+      <div class="w-100"></div>
+      <div class="col fw-bold text-end">Phone Number</div>
+      <div class="col">{{ employee.phone }}</div>
+      <div class="w-100"></div>
+      <div class="col fw-bold text-end">Department</div>
+      <div class="col">{{ employee.department }}</div>
+      <div class="w-100"></div>
+      <div class="col fw-bold text-end">Office</div>
+      <div class="col">{{ employee.office }}</div>
+      <div class="w-100"></div>
+      <div class="col fw-bold text-end">Job Title</div>
+      <div class="col">{{ employee.jobTitle }}</div>
+    </div>
+    <div class="buttons mt-5">
+      <button
+        class="btn btn-lg btn-warning me-3"
+        (click)="emitToggleFormEvent(employee.id)"
+      >
+        Edit
+      </button>
+      <button
+        class="btn btn-lg btn-secondary"
+        (click)="emitToggleProfileEvent(employee.id)"
+      >
+        Close
+      </button>
+    </div>
+  </div>
+</div>

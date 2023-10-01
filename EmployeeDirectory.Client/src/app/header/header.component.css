@@ -1,0 +1,31 @@
+.logo {
+  width: 150px;
+  height: 60px;
+}
+
+.name h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--light-blue);
+  margin: 0;
+}
+
+.name p {
+  font-size: 1.2rem;
+  margin: 5px 0 0 0;
+  color: var(--semi-dark-gray);
+}
+
+.greeting {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.greeting span {
+  color: var(--light-blue);
+}
+
+.user-img {
+  height: 40px;
+  width: 40px;
+}

@@ -1,0 +1,14 @@
+<div class="employees-container">
+  <employee-card
+    *ngFor="let card of cards"
+    (toggleProfileEvent)="onToggleProfile($event)"
+    (deleteCardEvent)="deleteCard($event)"
+    [card]="card"
+  ></employee-card>
+</div>
+<profile
+  *ngIf="isProfileVisible"
+  [id]="selectedId"
+  (toggleProfileEvent)="onToggleProfile($event)"
+  (toggleFormEvent)="toggleForm($event)"
+></profile>

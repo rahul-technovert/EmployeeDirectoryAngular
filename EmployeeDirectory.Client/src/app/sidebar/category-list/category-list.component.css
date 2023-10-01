@@ -1,0 +1,17 @@
+.category {
+  font-size: 1.1rem;
+  color: var(--semi-dark-gray);
+  cursor: pointer;
+}
+
+.heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--dark-gray);
+  margin-bottom: 3px;
+}
+
+.active {
+  color: #000;
+  font-weight: bold;
+}

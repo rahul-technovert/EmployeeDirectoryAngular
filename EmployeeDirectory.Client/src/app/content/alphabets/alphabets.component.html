@@ -1,0 +1,10 @@
+<ul class="alpbhabets">
+  <li
+    class="alphabet"
+    (click)="handleClick(value)"
+    [class.active]="activeAlphabets.includes(value)"
+    *ngFor="let value of generateAlpbhabets(); even as even"
+  >
+    {{ value }}
+  </li>
+</ul>
