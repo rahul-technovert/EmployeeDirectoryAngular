@@ -5,10 +5,10 @@
   (toggleFormEvent)="onToggleForm($event)"
   [cards]="cards"
 ></employees>
-<app-form
+<employee-form
   *ngIf="isFormVisible"
   (addCardEvent)="addCard($event)"
   (editCardEvent)="editCard($event)"
   (toggleFormEvent)="onToggleForm($event)"
   [id]="selectedId"
-></app-form>
+></employee-form>

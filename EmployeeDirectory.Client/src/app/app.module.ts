@@ -5,17 +5,17 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
 import { CategoryListComponent } from './sidebar/category-list/category-list.component';
 import { ContentComponent } from './content/content.component';
 import { AlphabetsComponent } from './content/alphabets/alphabets.component';
 import { AdvancedFiltersComponent } from './content/advanced-filters/advanced-filters.component';
 import { EmployeesComponent } from './content/employees/employees.component';
 import { EmployeeCardComponent } from './content/employees/employee-card/employee-card.component';
-import { FormComponent } from './content/form/form.component';
 import { ProfileComponent } from './content/employees/profile/profile.component';
+import { EmployeeFormComponent } from './content/form/employee-form.component';
 
 import Utils from 'src/common/utils';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,7 @@ import Utils from 'src/common/utils';
     AdvancedFiltersComponent,
     EmployeesComponent,
     EmployeeCardComponent,
-    FormComponent,
+    EmployeeFormComponent,
     ProfileComponent,
   ],
   imports: [BrowserModule, FormsModule, HttpClientModule],

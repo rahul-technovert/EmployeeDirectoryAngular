@@ -21,10 +21,6 @@ export class HttpService {
     return this.http.post<T>(`${this._baseURL}/${endpoint}`, payload);
   }
 
-  protected put<T>(endpoint: string, payload: any) {
-    return this.http.put<T>(`${this._baseURL}/${endpoint}`, payload);
-  }
-
   protected delete<T>(endpoint: string) {
     return this.http.delete<T>(`${this._baseURL}/${endpoint}`);
   }

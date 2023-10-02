@@ -7,27 +7,27 @@ namespace EmployeeDirectory.Services
 {
     public class CategoryServices : ICategoryService
     {
-        private readonly DbServices dbServices;
+        private readonly DbServices db;
 
         public CategoryServices(DbServices dbServices)
         {
-            this.dbServices = dbServices;
+            this.db = dbServices;
         }
 
         public ICollection<string> GetDepartments()
         {
-            return dbServices.GetAll<string>(Query.Departments);
+            return db.GetAll<string>(Query.Departments);
         }
 
         public ICollection<string> GetOffices()
         {
-            return dbServices.GetAll<string>(Query.Offices);
+            return db.GetAll<string>(Query.Offices);
 
         } 
         
         public ICollection<string> GetJobTitles()
         {
-            return dbServices.GetAll<string>(Query.JobTitles);
+            return db.GetAll<string>(Query.JobTitles);
 
         }
     }

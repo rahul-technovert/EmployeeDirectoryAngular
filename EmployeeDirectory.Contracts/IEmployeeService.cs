@@ -9,9 +9,7 @@ namespace EmployeeDIrectory.Contracts
 
         Employee GetEmployee(int id);
 
-        Employee CreateEmployee(Employee employee);
-
-        int UpdateEmployee(Employee updatedEmployee);
+        public Employee SaveEmployee(Employee employee);
 
         int RemoveEmployee(int id);
 

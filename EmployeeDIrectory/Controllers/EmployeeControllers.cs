@@ -23,10 +23,10 @@ namespace EmployeeDIrectory.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateEmployee([FromBody] Employee employee)
+        public IActionResult SaveEmployee([FromBody] Employee employee)
         {
 
-            return Ok(_employeeServices.CreateEmployee(employee));
+            return Ok(_employeeServices.SaveEmployee(employee));
         }
 
         [HttpGet("{id}")]
@@ -48,17 +48,6 @@ namespace EmployeeDIrectory.Controllers
             return NotFound();
         }
 
-
-        [HttpPut("{id}")]
-        public IActionResult UpdateEmployee(int id, [FromBody] Employee employee)
-        {
-            int affectedRow = _employeeServices.UpdateEmployee(employee);
-
-            if (affectedRow > 0)
-                return Ok(employee);
-
-            return NotFound();
-        }
 
     }
 }

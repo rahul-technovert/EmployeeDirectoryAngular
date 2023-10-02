@@ -15,7 +15,7 @@ export class EmployeeService extends HttpService {
     super(http);
   }
 
-  getCards(): Observable<EmployeeCard[]> {
+  getAll(): Observable<EmployeeCard[]> {
     return this.get<EmployeeCard[]>(ApiEndpoints.EmployeeCards);
   }
 
@@ -23,18 +23,11 @@ export class EmployeeService extends HttpService {
     return this.get<Employee>(`${ApiEndpoints.Employee}/${id}/`);
   }
 
-  createEmployee(employee: Employee): Observable<Employee> {
+  save(employee: Employee): Observable<Employee> {
     return this.post<Employee>(`${ApiEndpoints.Employee}`, employee);
   }
 
   deleteEmployee(id: number): Observable<number> {
     return this.delete<number>(`${ApiEndpoints.Employee}/${id}`);
-  }
-
-  updateEmployee(employee: Employee): Observable<Employee> {
-    return this.put<Employee>(
-      `${ApiEndpoints.Employee}/${employee.id}`,
-      employee
-    );
   }
 }

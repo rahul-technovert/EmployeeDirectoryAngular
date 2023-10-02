@@ -42,7 +42,7 @@ namespace EmployeeDIrectory.Services
         {
             using (var connection = _context.CreateConnection())
             {
-                return connection.Execute(procedure, parameters, commandType: CommandType.StoredProcedure);
+                return connection.ExecuteScalar<int>(procedure, parameters, commandType: CommandType.StoredProcedure);
             }
         }
     }

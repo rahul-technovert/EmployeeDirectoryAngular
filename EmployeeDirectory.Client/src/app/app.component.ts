@@ -116,7 +116,7 @@ export class AppComponent implements OnInit {
   }
 
   private setCardsAndCount() {
-    this.employeeServices.getCards().subscribe((cards) => {
+    this.employeeServices.getAll().subscribe((cards) => {
       this.employeeCards = this.filteredCards = cards;
       this.categoryCounts = this.utils.getCounts(this.employeeCards);
     });
